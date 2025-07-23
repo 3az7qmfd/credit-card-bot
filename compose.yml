@@ -1,0 +1,10 @@
+services:
+  card-bot:
+    image: ghcr.io/3az7qmfd/credit-card-bot:latest
+    volumes:
+      - ./data:/app/data
+    restart: always
+    environment:
+      - ADMIN_USER_ID=xxxx
+      - TELEGRAM_BOT_TOKEN=xxxx
+      - TZ=Asia/Shanghai

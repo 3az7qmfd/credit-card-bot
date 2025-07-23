@@ -1,0 +1,10 @@
+# config.yaml
+# 基础配置文件。这里的配置可以被 .env 文件中的同名环境变量覆盖。
+telegram:
+  bot_token: "" # 建议在 .env 文件中设置 TELEGRAM_BOT_TOKEN
+admin:
+  user_id: 0 # 建议在 .env 文件中设置 ADMIN_USER_ID
+# 默认的通知设置
+notifications:
+  daily_briefing_enabled: true
+  repayment_reminder_enabled: true
